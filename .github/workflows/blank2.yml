@@ -5,8 +5,9 @@ name: CI2
 # Controls when the workflow will run
 on:
   workflow_run:
-    workflows: [blank]
-    types: completed
+    workflows: ["blank"]
+    types: 
+      - completed
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
