@@ -16,12 +16,21 @@ on:
 jobs:
   job1:
     runs-on: ubuntu-latest
+    steps:
+      - name: job1
+        run: echo job1
   job2:
     needs: job1
     runs-on: ubuntu-latest
+    steps:
+      - name: job2
+        run: echo job2
   job3:
     needs: [job1, job2]
     runs-on: ubuntu-latest
+    steps:
+      - name: job3
+        run: echo job3
 
   # This workflow contains a single job called "build"
   build:
