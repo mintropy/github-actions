@@ -4,10 +4,10 @@ name: CI2
 
 # Controls when the workflow will run
 on:
-  workflow_run:
-    workflows: ["CI"]
-    types: 
-      - completed
+#   workflow_run:
+#     workflows: ["CI"]
+#     types: 
+#       - completed
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
